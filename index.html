@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhana Nation | NavPriAm Agro Ventures Pvt. Ltd.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "5o8HPBuVV9WS9FkwL",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <!-- Fixed Header with Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>
+                    <a href="#home" class="nav-brand-link">
+                        <img class="nav-logo" src="/assets/bgrm-removebg-preview.png" />
+                        <span class ="nav-brand-name">NavPriAm Agro Ventures Pvt. Ltd.</span>
+                    </a>
+                </h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#nutritional-benefits" class="nav-link">Nutritional Benefits</a></li>
+                <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="glass-overlay" aria-hidden="true"></div>
+        <div class="home-container">
+            <div class="home-left">
+                <div class="product-image-container">
+                    <img src="assets/m3-removebg-preview.png" alt="Premium Fox Nuts" class="product-image" id="productImage">
+                    
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="brand-content">
+                    <h1 class="brand-logo">Makhana Nation</h1>
+                    <p class="brand-tagline">Makhanas Served with Pyaar from Bihar❤️</p>
+                    <div class="about-description">
+                        <p><strong>Makhana Nation</strong> a brand of <strong>NavPriAm Agro Ventures Pvt. Ltd</strong> , we believe that snacking should be simple, delicious, and nourishing. That’s why we bring you handpicked, sun-dried, and lightly roasted makhanas straight from the farms of <strong> Bihar </strong>– with no artificial flavors, no preservatives, and no compromises.</p>
+                        <ul>
+                            <li><strong>100% Natural Ingredients</strong>   Nothing fake, ever.</li>
+                            <li><strong>Roasted, Not Fried</strong>   For a crunch that loves you back.</li>
+                            <li><strong>High Protein, Low Calorie</strong>   Fuel your body, not your cravings.</li>
+                            <li><strong>Farm to Pack Freshness</strong>   Sourced from trusted local farmers.</li>
+                        </ul>
+                    </div>
+                    <div class="coming-soon-contiainer">
+                        <div class="coming-soon-text" id="comingSoonText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutritional Benefits Section -->
+    <section class="nutritional-benefits" id="nutritional-benefits">
+        <div class="nutritional-container">
+            <div class="nutritional-left">
+                <div class="nutritional-image-container">
+                    <img src="assets/makhana1.jpeg" alt="Bowl of Fox Nuts" class="nutritional-image" id="nutritionalImage">
+                </div>
+                <div class="nutritional-image-container">
+                    <img src="assets/makhana-2.jpeg" alt="Bowl of Fox Nuts" class="nutritional-image" id="nutritionalImage2">
+                </div>
+            </div>
+            <div class="nutritional-center">
+                <h2 class="section-title">Nutritional Benefits</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <h3>High Protein Content</h3>
+                        <p>Rich in plant-based protein, perfect for muscle building and recovery</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Low in Calories</h3>
+                        <p>Ideal for weight management and healthy snacking</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Rich in Minerals</h3>
+                        <p>Contains magnesium, potassium, and phosphorus for bone health</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Gluten-Free</h3>
+                        <p>Safe for those with gluten sensitivities and celiac disease</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Antioxidant Properties</h3>
+                        <p>Helps fight free radicals and supports overall health</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nutritional-right">
+                <div class="nutrition-chart">
+                    <h3>Nutritional Distribution (per 100g)</h3>
+                    <canvas id="nutritionChart" width="300" height="300"></canvas>
+                </div>
+                <div class="typewriter-card">
+                    <div class="typewriter-text" id="typewriterText"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="recipes" id="recipes">
+        <div class="recipes-container">
+            <h2 class="section-title">Delicious Recipes</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="recipeCarousel">
+                    <div class="recipe-item">
+                        <img src="assets/roasted.webp" alt="Roasted Makhana">
+                        <h3>Roasted Makhana</h3>
+                        <p class="recipe-description">Crispy and flavorful roasted fox nuts with a hint of spices</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/curry.jpg" alt="Makhana Curry">
+                        <h3>Makhana Curry</h3>
+                        <p class="recipe-description">Traditional curry with fox nuts in rich tomato gravy</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/kheer.png" alt="Makhana Kheer">
+                        <h3>Makhana Kheer</h3>
+                        <p class="recipe-description">Sweet dessert pudding made with fox nuts and milk</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/salad.jpg" alt="Makhana Salad">
+                        <h3>Makhana Salad</h3>
+                        <p class="recipe-description">Fresh and healthy salad with roasted fox nuts</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/smoothie.jpg" alt="Makhana Smoothie">
+                        <h3>Makhana Smoothie</h3>
+                        <p class="recipe-description">Nutritious smoothie bowl with fox nuts and fruits</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/snack.jpg" alt="Makhana Snack Mix">
+                        <h3>Makhana Snack Mix</h3>
+                        <p class="recipe-description">Perfect on-the-go snack mix with various nuts</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/biryani.webp" alt="Makhana Biryani">
+                        <h3>Makhana Biryani</h3>
+                        <p class="recipe-description">Aromatic rice dish with fox nuts and spices</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/laddoo.webp" alt="Makhana Ladoo">
+                        <h3>Makhana Ladoo</h3>
+                        <p class="recipe-description">Traditional sweet balls made with fox nuts</p>
+                    </div>
+                    <div class="recipe-item">
+                        <img src="assets/soup.webp" alt="Makhana Soup">
+                        <h3>Makhana Soup</h3>
+                        <p class="recipe-description">Warm and comforting soup with fox nuts</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevBtn"><</button>
+                    <button class="carousel-btn next" id="nextBtn">></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2 class="section-title">Contact Us</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email ID *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description *</label>
+                        <textarea id="description" name="description" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="sendEmail()">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="map-container">
+                    <h3 class="find-us">Find Us</h3>
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1032.6642416639943!2d85.1015426080089!3d25.618550560623017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57f6cdb8e86b%3A0x78b53b075942f51d!2sDharam%20apartment!5e0!3m2!1sen!2sin!4v1757836621264!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> 302, Dharam Apartment, Gokul Path, Patel Nagar, Patna-800023</p>
+                        <p><strong>Phone:</strong> +91 9525209999</p>
+                        <p><strong>Email:</strong> info@makhananation.com</p>
+                    </div>
+                    <!--
+                    <div class="social-icons">
+                        
+                        <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.instagram.com/yourprofile" class="insta-text">@makhanas123</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Navpriam Agro Ventures Pvt. Ltd. | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
